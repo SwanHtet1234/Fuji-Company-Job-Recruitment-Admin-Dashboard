@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo"><strong>FUJI</strong> Jobs <div class="xmark"><i class="fa-solid fa-square-xmark"></i></div></h2>
+        <ul class="fixednav">
+            <li><a href="../index.html"><i class="fa-solid fa-chart-line beside"></i> Dashboard</a></li>
+            <li><a href="#" class="joblistbtn"><i class="fa-solid fa-briefcase beside"></i> Job Listings <i class="fa-solid fa-caret-down down"></i></a>
+                <ul class="joblistlist">
+                    <li><a href="./add_job.html">Add Job</a></li>
+                    <li><a href="./view_job.html">View Jobs</a></li>
+                </ul>
+            </li>
+            <li><a href="./job_application.html"><i class="fa-brands fa-wpforms beside"></i> Job Applications</a></li>
+            <li><a href="#" class="interviewbtn"><i class="fa-solid fa-handshake beside"></i> Interview <i class="fa-solid fa-caret-down down"></i></a>
+                <ul class="interviewlist">
+                    <li><a href="./add_interview.html">Add Interview</a></li>
+                    <li><a href="./view_schedule.html">View Schedule</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="userbtn"><i class="fa-solid fa-user beside"></i> User <i class="fa-solid fa-caret-down down"></i></a>
+                <ul class="userlist">
+                    <li><a href="./register_user.html">Register</a></li>
+                    <li><a href="./view_user.html">View Users</a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fa-solid fa-right-from-bracket beside"></i> Logout</a></li>
+        </ul>
+    </nav>
+    <section class="rightsection">
+        <h2><div class="menubar"><i class="fa-solid fa-bars menuicon"></i></div> Welcome Admin</h2>
+        <div class="changestatussection">
+            <form action="" class="changestatusform">
+                <h3>Change Status</h3>
+                <span>Job Title</span>
+                <input type="text" name="" id="" value="Sales Executive" disabled>
+                <span>Candidate Name</span>
+                <input type="text" name="" id="" value="Chris Ivan" disabled>
+                <span>Change Status</span>
+                <select name="" id="">
+                    <option value="">Pending</option>
+                    <option value="">Approved</option>
+                    <option value="">Scheduled</option>
+                    <option value="">Rejected</option>
+                </select>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        const joblistbtn = document.querySelector(".joblistbtn");
+        const joblistmenu = document.querySelector(".joblistlist");
+        const interviewbtn = document.querySelector(".interviewbtn");
+        const interviewmenu = document.querySelector(".interviewlist");
+        const userbtn = document.querySelector(".userbtn");
+        const usermenu = document.querySelector(".userlist");
+        joblistbtn.addEventListener("click",function(){
+            joblistmenu.classList.toggle("joblistshow");
+            interviewmenu.classList.remove("interviewlistshow");
+            usermenu.classList.remove("userlistshow");
+        })
+
+        
+        interviewbtn.addEventListener("click",function(){
+            interviewmenu.classList.toggle("interviewlistshow");
+            joblistmenu.classList.remove("joblistshow");
+            usermenu.classList.remove("userlistshow");
+        })
+
+        
+        userbtn.addEventListener("click",function(){
+            usermenu.classList.toggle("userlistshow");
+            interviewmenu.classList.remove("interviewlistshow");
+            joblistmenu.classList.remove("joblistshow");
+        })
+    </script>
+    <script>
+        const menubtn = document.querySelector('.menubar');
+        const navbar = document.querySelector('nav');
+        const xmarkicon = document.querySelector('.xmark')
+        menubtn.addEventListener('click',function(){
+            navbar.classList.toggle('navbarshow');
+        });
+        xmarkicon.addEventListener('click',function(){
+            navbar.classList.remove('navbarshow');
+        })
+    </script>
+</body>
+</html>

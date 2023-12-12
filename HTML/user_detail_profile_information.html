@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h2 class="logo"><strong>FUJI</strong> Jobs <div class="xmark"><i class="fa-solid fa-square-xmark"></i></div></h2>
+        <ul class="fixednav">
+            <li><a href="../index.html"><i class="fa-solid fa-chart-line beside"></i> Dashboard</a></li>
+            <li><a href="#" class="joblistbtn"><i class="fa-solid fa-briefcase beside"></i> Job Listings <i class="fa-solid fa-caret-down down"></i></a>
+                <ul class="joblistlist">
+                    <li><a href="./add_job.html">Add Job</a></li>
+                    <li><a href="./view_job.html">View Jobs</a></li>
+                </ul>
+            </li>
+            <li><a href="./job_application.html"><i class="fa-brands fa-wpforms beside"></i> Job Applications</a></li>
+            <li><a href="#" class="interviewbtn"><i class="fa-solid fa-handshake beside"></i> Interview <i class="fa-solid fa-caret-down down"></i></a>
+                <ul class="interviewlist">
+                    <li><a href="./add_interview.html">Add Interview</a></li>
+                    <li><a href="./view_schedule.html">View Schedule</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="userbtn"><i class="fa-solid fa-user beside"></i> User <i class="fa-solid fa-caret-down down"></i></a>
+                <ul class="userlist override">
+                    <li><a href="./register_user.html">Register</a></li>
+                    <li><a href="./view_user.html" class="current">View Users</a></li>
+                </ul>
+            </li>
+            <li><a href=""><i class="fa-solid fa-right-from-bracket beside"></i> Logout</a></li>
+        </ul>
+    </nav>
+    <section class="rightsection">
+        <h2><div class="menubar"><i class="fa-solid fa-bars menuicon"></i></div> Welcome Admin</h2>
+        <div class="rightbottomsection">
+            <section class="profilebigbox">
+                <div class="profilenav">
+                    <h3>Profile Navigation</h3>
+                    <a href="./user_detail.html"><i class="fa-solid fa-user picon"></i> User Detail</a>
+                    <a href="#" class="pcurrent"><i class="fa-regular fa-pen-to-square picon"></i> Personal Information</a>
+                    <a href="./user_detail_education_certificate.html"><i class="fa-solid fa-book-open picon"></i> Education & Certificate</a>
+                    <a href="./user_detail_previous_experience.html"><i class="fa-solid fa-building-columns picon"></i> Previous Experience</a>
+                    <a href="./user_detail_dynamic_question.html"><i class="fa-regular fa-file picon"></i> Dynamic Question</a>
+                    <a href="./user_detail_applied_job.html"><i class="fa-solid fa-envelope picon"></i> Applied Jobs</a>
+                </div>
+                <form action="" class="profileinformation">
+                    <h2>Profile Information</h2>
+                    <div class="profilerow">
+                        <div class="profilecolumn">
+                            <span>Title<strong>*</strong></span>
+                            <select name="" id="">
+                                <option value="">Enter Title</option>
+                                <option value="">Mr</option>
+                                <option value="">Ms</option>
+                                <option value="">Mrs</option>
+                                <option value="">Dr</option>
+                            </select>
+                        </div>
+                        <div class="profilecolumn">
+                            <span>Name<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="Enter Name" required>
+                        </div>
+                    </div>
+                    <div class="profilerow">
+                        <div class="profilecolumn">
+                            <span>Date Of Birth<strong>*</strong></span>
+                            <input type="date" name="" id="" required>
+                        </div>
+                        <div class="profilecolumn">
+                            <span>NRC / Passport Number<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="NRC/ Passport Number" required>
+                        </div>
+                    </div>
+                    <div class="profilerow">
+                        <div class="profilecolumn">
+                            <span>Phone<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="profilecolumn">
+                            <span>Email Address</span>
+                            <input type="text" name="" id="" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="profilerow">
+                        <div class="profilecolumn">
+                            <span>Current Living Address<strong>*</strong></span>
+                            <input type="text" name="" id="" placeholder="Current Living Address" required>
+                        </div>
+                        <div class="profilecolumn">
+                            <span>Permanent Living Address</span>
+                            <input type="text" name="" id="" placeholder="Permanent Living Address">
+                        </div>
+                    </div>
+                    <div class="profilerow">
+                        <div class="profilecolumn">
+                            <span>How did you know about us?</span>
+                            <select name="" id="">
+                                <option value="">How did you know about us?</option>
+                                <option value="">Facebook</option>
+                                <option value="">Linkedin</option>
+                                <option value="">Friends</option>
+                                <option value="">Colleagues</option>
+                                <option value="">Billboard</option>
+                                <option value="">Job Fair</option>
+                            </select>
+                        </div>
+                        <div class="profilecolumn">
+                            <span>What is your current status?</span>
+                            <select name="" id="">
+                                <option value="">What is your current status?</option>
+                                <option value="">Currently employed but looking for new opportunity</option>
+                                <option value="">Actively looking for new opportunity and can join immediately</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h3>PREFERRED WORK LOCATION REGION</h3>
+                    <div class="profilerow">
+                        <div class="profilecolumn">
+                            <span>Region<strong>*</strong></span>
+                            <select name="" id="">
+                                <option value="">Select Region</option>
+                                    <option value="">AYEYARWADDY</option>
+                                    <option value="">BAGO EAST</option>
+                                    <option value="">BAGO WEST</option>
+                                    <option value="">CHIN</option>
+                                    <option value="">KACHIN</option>
+                                    <option value="">KAYAH</option>
+                                    <option value="">KAYIN</option>
+                                    <option value="">MAGWAY</option>
+                                    <option value="">MANDALAY</option>
+                                    <option value="">MON</option>
+                                    <option value="">NAYPYIDAW</option>
+                                    <option value="">RAKHINE</option>
+                                    <option value="">SAGAING</option>
+                                    <option value="">SHAN EAST</option>
+                                    <option value="">SHAN NORTH</option>
+                                    <option value="">SHAN SOUTH</option>
+                                    <option value="">TANINTHARYI</option>
+                                    <option value="">YANGON</option>
+                            </select>
+                        </div>
+                        <div class="profilecolumn">
+                            <span>Preferred Job Category<strong>*</strong></span>
+                            <select name="" id="">
+                                <option value="">Select Category</option>
+                                <option value="">Administrative</option>
+                                <option value="">Customer Service</option>
+                                <option value="">Finance/Account</option>
+                                <option value="">Human Resource</option>
+                                <option value="">Information Technology</option>
+                                <option value="">Manufacturing/Production</option>
+                                <option value="">Marketing</option>
+                                <option value="">Merchandizing/Category</option>
+                                <option value="">Operation (Retail, F&B, Warehouse)</option>
+                                <option value="">Others</option>
+                                <option value="">Sales/Marketing/Business Development</option>
+                                <option value="">Supply Chain and Logistics</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+                    <h3>UPLOAD CV</h3>
+                    <div class="specialrow">
+                        <div class="profilecolumn">
+                            <span>Resume<strong>*</strong></span>
+                            <input type="file" name="" id="">
+                            
+                        </div>
+                    </div>
+                    <div class="profileaccept">
+                        <input type="checkbox" name="profchk" id="" required>
+                        <label for="profchk">I HAVE READ AND ACCEPT <a href="./privacypolicy.html">PRIVACY POLICY</a></label>
+                    </div>
+                    <div class="bottombuttom">
+                            <button type="submit"><i class="fa-regular fa-floppy-disk"></i> Update Profile</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </section>
+    <script>
+        const joblistbtn = document.querySelector(".joblistbtn");
+        const joblistmenu = document.querySelector(".joblistlist");
+        const interviewbtn = document.querySelector(".interviewbtn");
+        const interviewmenu = document.querySelector(".interviewlist");
+        const userbtn = document.querySelector(".userbtn");
+        const usermenu = document.querySelector(".userlist");
+        joblistbtn.addEventListener("click",function(){
+            joblistmenu.classList.toggle("joblistshow");
+            interviewmenu.classList.remove("interviewlistshow");
+            usermenu.classList.remove("userlistshow");
+        })
+
+        
+        interviewbtn.addEventListener("click",function(){
+            interviewmenu.classList.toggle("interviewlistshow");
+            joblistmenu.classList.remove("joblistshow");
+            usermenu.classList.remove("userlistshow");
+        })
+
+        
+        userbtn.addEventListener("click",function(){
+            usermenu.classList.toggle("userlistshow");
+            interviewmenu.classList.remove("interviewlistshow");
+            joblistmenu.classList.remove("joblistshow");
+        })
+    </script>
+    <script>
+        const menubtn = document.querySelector('.menubar');
+        const navbar = document.querySelector('nav');
+        const xmarkicon = document.querySelector('.xmark')
+        menubtn.addEventListener('click',function(){
+            navbar.classList.toggle('navbarshow');
+        });
+        xmarkicon.addEventListener('click',function(){
+            navbar.classList.remove('navbarshow');
+        })
+    </script>
+</body>
+</html>
